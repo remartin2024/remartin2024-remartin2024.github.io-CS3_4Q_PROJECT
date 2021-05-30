@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bookmarked</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Charm:wght@400;700&family=Fredericka+the+Great&family=Unica+One&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+		<style>
+           
+			html {
+			scroll-behavior: smooth;
+			}
+			
+			body{
+            background-size: cover;
+            background-attachment: fixed;
+			background-color: #fcf9f9;
+            padding-top: 70px;
+			font-size:20px;
+			font-family: 'Poppins', sans-serif;
+			 }
+			
+			#about {
+			float: right;
+			}
+		
+			img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            height: 150px;
+			}
+  
+			.products button, .productslast button{
+            font-size: 12px;
+			}
+			
+			.products p, .productslast p{
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray;
+			}
+			
+			.product img{
+            margin-bottom: 15px;
+			}
+			
+			.product{
+            float: left;
+			}
+			
+			.products, .productslast {
+            border: 1px solid white;
+            text-align: center;
+            padding: 30px;
+            background-color: white;
+			
+			}
+		
+			.buyit { 
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			padding: 20px;
+			
+			}
+		
+			#thecartpart{
+			border: 1px grey; 
+			background-color: #dddddd;
+			}
+		
+			#cart {
+			text-align: left; 
+			margin: 0; 
+			border: none; 
+			border-bottom: 2px solid grey; 
+			background-color:white; 
+			padding: 0;
+			}
+		
+			#theproduct{
+			margin:0;
+			font-size: 10px;
+			}
+		
+			#theremovething{
+			font-size:14px;
+			color:red;
+			}
+		
+			#category1{
+			margin-left:15px;
+			font-size:30px;
+			font-weight:bold;
+			margin-top:100px;
+			color: #9fe6e6;
+			}
+			
+			#category2{
+			margin-left:15px;
+			font-size:30px;
+			font-weight:bold;
+			color: #9fe6e6;
+			}
+		
+			#category3{
+			margin-left:15px;
+			font-size:30px;
+			font-weight:bold;
+			color: #9fe6e6;
+			}
+		
+			#category4{
+			margin-left:15px;
+			font-size:30px;
+			font-weight:bold;
+			color: #9fe6e6;
+			}
+		
+			.defaultlabelsucks{
+			float:left;
+			font-weight:bold;
+			}
+		
+			#nameofstore{
+			float:left;
+			}
+		
+			#gotocart{
+			float:right;
+			}
+		
+			a{
+			text-decoration: none;
+			color:white;
+			float: right;
+			}
+			
+			.productslast {
+			margin-bottom: 80px;
+			}
+		
+			.dropdown-menu{
+			background-color: #C09175;
+			border: 0.1px solid #C09175;
+			}
+			
+			.products button, .productslast button{
+			background-color: #C09175;
+			transition: 0.3s;
+			border: 0.1px solid #C09175;
+			font-family: 'Unica One', cursive;
+			}
+			
+			.products button:hover {
+			background-color: #9B735B;
+			border: 0.1px solid #C09175;
+			}
+			
+			.productslast button:hover{
+			background-color: #9B735B;
+			border: 0.1px solid #C09175;
+			}
+			
+			#catalog {
+			font-size: 18px;
+			margin-left: 100px;
+			margin-right: 100px;
+			margin-bottom: 1000px;
+			}
+			
+			h1 {
+			font-family: 'Poppins', sans-serif;
+			text-align: left;
+			border-bottom: 5px solid #C09175;
+			font-size:90px;
+			width:98.2%;
+			padding: 0px;
+			}
+		
+			h1 mark {
+			background-color: #C09175;
+			padding: 0;
+			color: #9fe6e6;
+			}
+			
+			#sale {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			width: 50%;
+			height: 50%;
+			margin-top:70px;
+			}
+
+			#myBtn {
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 30px;
+			z-index: 99;
+			border: none;
+			outline: none;
+			background-color: #C09175;
+			color: white;			 
+			cursor: pointer;
+			padding-right:15px;
+			padding-left:15px;
+			padding-bottom:15px;
+			padding-top: 8px;
+			border-radius: 4px;
+			height: 70px;
+			width:70px;
+			font-size: 10px;
+			transition: all 500ms ease; 
+			font-family: 'Poppins', sans-serif;
+			font-weight:bold;
+			}
+
+			#myBtn img {
+			height: 20px;
+			width:30px;
+			}
+			
+			#myBtn:hover {
+			background-color: #9B735B;
+			}
+		
+			.carousel{
+			background-color:white;
+			padding-bottom: 50px;
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-top: 6px;
+			}
+			
+			.carousel-item{
+			text-align: center;
+			}
+			
+			.carousel img {
+			height:auto;
+			width:100%;
+			}
+			
+			.carousel-indicators {
+			width:150px;
+			border-radius: 60px;
+			margin-left:auto;
+			margin-right:auto;
+			background-color:#D1AD98;
+			}
+			
+			.carousel-control-next, .carousel-control-prev {
+			background-color:#D1AD98;
+			height:30px;
+			margin-top:auto;
+			margin-bottom:auto;
+			width: 35px;
+			border-radius:50px;
+			margin-left: 7px;
+			margin-right: 7px;
+			}
+			
+			
+			@media screen and (min-width: 1647px) {
+                #catalog {
+                font-size: 15px;
+                }
+
+                #category1, #category2, #category3, #category4 {
+                font-size:30px;
+                }
+				
+				#carouselheader {
+				font-size: 30px;
+				}
+				
+				#shop {
+				font-size:30px;
+				}
+				
+				#hi, #hi1, #hi2, #hi3 {
+				width: 300px;
+				font-size:25px;
+				}
+				
+				#desc {
+				font-size: 13px;
+				}
+				
+            }
+
+            @media screen and (max-width: 1646px) {
+                #catalog {
+                font-size: 13.2px;
+                }
+
+                #category2, #category3, #category4 {
+                font-size:24px;
+                }
+            }
+
+            @media screen and (max-width: 1231px) {
+                #category1, #category2, #category3, #category4 {
+                font-size:24px;
+                }
+            }
+
+            @media screen and (min-width: 1232px) {
+			
+                #category1, #category2, #category3, #category4 {
+                font-size:24px;
+                }
+            }
+			
+            @media screen and (max-width: 1397px) {
+                .products, .productslast{
+                display: block;
+                height: 300px;
+                }
+            }
+			
+			
+            @media screen and (max-width: 959px){ 
+                .product{
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%;
+                }
+				
+				#empty {
+				font-size: 30px;
+				}
+				
+				#shop {
+				font-size: 20px;
+				}
+				
+				#hello {
+				font-size: 19px;
+				}
+				
+				#hi, #hi1, #hi2, #hi3 {
+				width: 150px;
+				}
+				
+				#carouselheader {
+				font-size: 20px;
+				}
+            }
+			
+			@media screen and (max-width: 854px){ 
+				#shop  {
+				font-size: 18px;
+				}
+				
+				#carouselheader {
+				font-size: 18px;
+				}
+			}
+			
+			@media screen and (max-width: 810px){ 
+				#shop {
+				font-size: 14px;
+				}
+				
+				#carouselheader {
+				 font-size: 14px;
+				}
+				
+				#hi, #hi1, #hi2, #hi3 {
+				font-size: 10px;
+				}
+			}
+			
+			@media screen and (min-width: 960px){
+                #empty {
+				font-size: 35px;
+				}
+				
+				#carouselheader {
+				 font-size: 28px;
+				}
+			}
+			
+			@media screen and (max-width: 432px){
+                #hi, #hi1, #hi2, #hi3 {
+				width: 100px;
+				}
+			}
+			
+			@media screen and (max-width: 721px){
+                #shop   {
+				font-size: 12px;
+				}
+				
+				#carouselheader {
+				font-size: 12px;
+				}
+				
+				#lolz {
+				margin-left: -10px;
+				}
+				
+				#hi, #hi1, #hi2, #hi3 {
+				width: 70px;
+				}
+			
+			}
+			
+			
+			@media screen and (max-width: 876px) {
+				
+				#desc {
+				font-size: 10px;
+				}
+			}
+			
+			@media screen and (min-width: 877px) {
+				#desc {
+					font-size: 13px;
+				}
+			}
+			
+            @media only screen and (max-width: 768px) {
+                .product{
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+                }
+				
+				#empty {
+				font-size: 25px;
+				padding-top:10px;
+				}
+            }
+			
+			.navbar {
+			font-family: 'Poppins', sans-serif;
+			font-weight:bold;
+			
+			}
+			
+			footer {
+				position: relative;
+				margin-top: 9%; 
+				height: 230px;
+				color:white;
+				padding-left:8%;
+				padding-right:20%;
+				background-color: #363736;
+				padding-top:45px;
+				padding-bottom:20px;
+				display: inline-block;
+				margin-bottom: 15px;
+				width:100%;
+			}
+			
+			.dropdown-item {
+			color:white;
+			transition: 0.5s ;
+			}
+			
+			.dropdown-item:hover {
+			color: #9B735B;
+			background-color:white;
+			}
+			
+			#cartthing {
+			margin-bottom: 100px;
+			}
+			
+			#logo {
+			width:50px;
+			height:50px;
+			}
+			
+			#carouselheader {
+			font-weight: bold;
+			font-family: 'Poppins', sans-serif;
+			color:#C09175;
+			padding-top:20px;
+			}
+			
+			#empty {
+			background-color: #C09175;
+			margin-top: 100px;
+			height:50px;
+			font-weight: bold;
+			font-family: 'Fredericka the Great', cursive;
+			color:white;
+			padding-left:20px;
+			}
+			
+			#hello {
+			background-color: #D4B6A4;
+			padding-top:20px;
+			padding-bottom:20px;
+			padding-right:20px;
+			padding-left:35px;
+			color: #B0856B;
+			font-family: 'Poppins', sans-serif;
+			font-size: 25px;
+			}
+			
+			#hello a {
+			float:left;
+			font-family: 'Poppins', sans-serif;
+			}
+			
+			#shop {
+			font-weight:bold;
+			}
+		
+			
+			#hi:hover, #hi1:hover, #hi2:hover, #hi3:hover {
+			background-color: #B0856B;
+			}
+			
+			#hi, #hi1, #hi2, #hi3{
+			border:0.1px solid #D4B6A4;
+			background-color: #D4B6A4;
+			transition: 0.3s;
+			text-align:left;
+			padding-left:10px;
+			padding-right:0;
+			}
+			
+			#first {
+			font-size:45px;
+			font-family: 'Fredericka the Great', cursive;
+			color: #D6D6D6;
+			}
+			
+			#futer {
+			height:50px;
+			width:50px;
+			}
+			
+			#desc {
+			text-align: justify;
+			color: #B2B2B2;
+			padding-right:5%;
+			}
+			
+			#dulo {
+			margin-left: 8%;
+			color: #A3A3A3;
+			font-size:15px;
+			margin-bottom:60px;
+			}
+			
+      </style>
+    </head>
+    <body>
+	
+	<button onclick="topFunction()" id="myBtn" style='font-size:18px'><img src="https://myptsolutions.com/wp-content/uploads/2016/05/pts-arrow-up.png" alt="arrow_up"><br>TOP</button>
+	
+	
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #C09175;">
+		<div class="navbar-brand">
+			<img id="logo" src="https://i.ibb.co/DbgM5bc/circle-cropped.png" class="d-inline-block align-top" alt="Logo">
+		</div>
+		
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+				<a class="nav-link" href="index.html" >INDEX</a>
+				</li>
+				
+				<li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+				<a class="nav-link" href="catalog.html">CATALOG</a>
+				</li>
+			
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+				<a class="nav-link" href="#total">GO TO CART</a>
+				</li>
+				
+				
+			</ul>
+			
+			<ul class="navbar-nav ml-auto">
+				
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+				<a class="nav-link" href="ABOUT.html">ABOUT US</a>
+				</li>
+			</ul>
+				
+		</div>
+    </nav>
+
+		<div id="catalog">
+		
+		
+		<div class="container-lg my-3">
+		
+		
+		<div id="empty">Bookmarked</div>
+		<div class="row no-gutters">
+		
+			<div id="hello" class="col-sm-4">
+				<div id="shop">Shop By Genre<br></div>
+				<table id="lolz">
+					<tr><td><a id="hi" class="btn btn-large btn-primary" href="#products1">Romance</a></td></tr>
+					<tr><td><a id="hi1" class="btn btn-large btn-primary" href="#products2">Fantasy</a><br></td></tr>
+					<tr><td><a id="hi2" class="btn btn-large btn-primary" href="#products3">Mystery</a><br></td></tr>
+					<tr><td><a id="hi3" class="btn btn-large btn-primary" href="#products4">Historical Fiction</a></td></tr>
+				</table>
+			</div>
+			<div class="col-sm-8" style="background-color:white;">
+ 
+		
+				<div id="myCarousel" class="carousel slide">
+		
+					<div id="carouselheader">The Newspaper</div>
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+        
+					<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="https://i.ibb.co/YPDx44m/SUMMER-1.png" alt="First Slide">
+						<div class="carousel-caption d-none d-md-block">
+							
+						   
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="https://i.ibb.co/rkB713S/SUMMER-2.png" alt="Second Slide">
+						<div class="carousel-caption d-none d-md-block">
+							
+							
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="https://i.ibb.co/Gcx4V4s/SUMMER-3.png" alt="Third Slide">
+						<div class="carousel-caption d-none d-md-block"> 
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div id = "buystuffpls1" class="buyit">
+		   <h1 id = "category1"><mark>&nbsp;&nbsp;Romance&nbsp;&nbsp;</mark> </h1>
+            <div class="col-sm-3 product" id="products1">
+                <div class="products">
+					<img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1415584703l/22544234.jpg" alt="The Last Heiress">
+                    <p>The Last Heiress</p>
+                    <button class="btn btn-dark" onclick = "add(100 , 'The Last Heiress')" > Php 100.00</button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+                    <img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1583339454l/45023611.jpg" alt="The Roommate">
+                    <p>The Roommate</p>
+                    <button class="btn btn-dark" onclick = "add(150, 'The Roommate')"> Php 150.00</button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+					<img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1593579246l/54125750._SY475_.jpg" alt="Always Only You">
+                    <p>Always Only You</p>
+                    <button class="btn btn-dark" onclick = "add(150, 'Always Only You')"> Php150.00</button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+					<img src = "https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Eclipsecover.jpg/220px-Eclipsecover.jpg" alt="Ecplise">
+                    <p> Eclipse </p>
+                    <button class="btn btn-dark" onclick = "add(125, 'Eclipse')"> Php 125.00 </button>
+                </div>
+            </div>
+        </div>
+		
+		<div id = "buystuffpls2" class="buyit">
+            <div class="col-sm-3 product">
+                <div class="products">
+					<img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1571119709l/52167727._SX0_SY0_.jpg" alt="Like Lovers Do">
+                    <p>Like Lovers Do</p>
+                    <button class="btn btn-dark" onclick = "add(175 , 'Like Lovers Do')" > Php 175.00 </button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+                    <img src = "https://img1.od-cdn.com/ImageType-100/0439-1/%7B02538BFD-3E57-409F-B1D3-1B698003AD85%7DImg100.jpg" alt="It Ends With Us">
+                    <p>It Ends With Us</p>
+                    <button class="btn btn-dark" onclick = "add(200, 'It Ends With Us')"> Php 200.00</button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+					<img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1341952742l/15745753.jpg" alt="Eleonor & Park">
+                    <p>Eleonor & Park </p>
+                    <button class="btn btn-dark" onclick = "add(200, 'Eleonor & Park')"> Php 200.00</button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="productslast" id="lastproduct1">
+					<img src = "https://images2.penguinrandomhouse.com/cover/9780307744975" alt="Jane Eyre">
+                    <p>Jane Eyre</p>
+                    <button class="btn btn-dark" onclick = "add(100, 'Jane Eyre')"> Php 100.00 </button>
+                </div>
+            </div>
+        </div>
+		
+		
+		
+		<div id = "buystuffpls3" class="buyit">
+		<h1 id= "category2"><mark>&nbsp;&nbsp;Fantasy &nbsp;&nbsp;</mark></h1>
+            <div class="col-sm-3 product" id="products2">
+                <div class="products">
+					<img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1566425108l/33.jpg" alt="Lord of the Rings">
+                    <p>Lord of the Rings</p>
+                    <button class="btn btn-dark" onclick = "add(150 , 'Lord of the Rings')" > Php 150.00 </button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+                    <img src = "https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/TheWayOfKings.png/220px-TheWayOfKings.png" alt="The Way of the Kinds">
+                    <p>The Way of Kings</p>
+                    <button class="btn btn-dark" onclick = "add(100, 'The Way of Kings')"> Php 100.00 </button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+					<img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1398083044l/21956219.jpg" alt="Assassin's Apprentice">
+                    <p>Assassin's Apprentice</p>
+                    <button class="btn btn-dark" onclick = "add(200, 'Assassin's Apprentice')"> Php 200.00 </button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+					<img src = "https://kbimages1-a.akamaihd.net/dd1baacc-184b-4f28-a7d5-6dbe70816fb7/353/569/90/False/a-game-of-thrones.jpg" alt="A Game of Thrones">
+                    <p>A Game of Thrones</p>
+                    <button class="btn btn-dark" onclick = "add(200, 'A Game of Thrones')"> Php 200.00 </button>
+                </div>
+            </div>
+        </div>
+		
+		<div id = "buystuffpls4" class="buyit">
+            <div class="col-sm-3 product">
+                <div class="products">
+					<img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1607528602l/48915089.jpg" alt="Sorrowland">
+                    <p>Sorrowland</p>
+                    <button class="btn btn-dark" onclick = "add(175 , 'Sorrowland')" > Php 175.00 </button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+                    <img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1600783497l/55077657.jpg" alt="A Psalm for the Wild-Built">
+                    <p>A Psalm for the Wild-Built</p>
+                    <button class="btn btn-dark" onclick = "add(125, 'A Psalm for the Wild-Built')"> Php 125.00 </button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+					<img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1600090252l/55284969.jpg" alt="Bubble">
+                    <p>Bubble</p>
+                    <button class="btn btn-dark" onclick = "add(150, 'Bubble')"> Php 150.00</button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="productslast" id="lastproduct2">
+					<img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1619362058l/55711617.jpg" alt="My Heart is a Chainsaw">
+                    <p>My Heart is a Chainsaw</p>
+                    <button class="btn btn-dark" onclick = "add(200, 'My Heart is a Chainsaw')"> Php 200.00 </button>
+                </div>
+            </div>
+        </div>
+		
+		<div id = "buystuffpls5" class="buyit">
+		<h1 id= "category3"><mark>&nbsp;&nbsp;Mystery&nbsp;&nbsp;</mark></h1>
+            <div class="col-sm-3 product" id="products3">
+                <div class="products">
+					<img src = "https://fully-booked.ap-south-1.linodeobjects.com/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/9/1/91bblcjo.jpg" alt="The Silent Patient">
+                    <p>The Silent Patient</p>
+                    <button class="btn btn-dark" onclick = "add(150 , 'The Silent Patient')" > Php 150.00</button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+                    <img src = "https://images.penguinrandomhouse.com/cover/9780735212152" alt="The Girl on the Train"> 
+                    <p>The Girl on the Train</p>
+                    <button class="btn btn-dark" onclick = "add(175, 'The Girl on the Train')"> Php 175.00</button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+					<img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1601082387l/54814824.jpg" alt="Ocean Prey">
+                    <p>Ocean Prey</p>
+                    <button class="btn btn-dark" onclick = "add(150, 'Ocean Prey')"> Php 150.00</button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+					<img src = "https://images.penguinrandomhouse.com/cover/9781984880963" alt="The Thursday Murder Club">
+                    <p id="murder">The Thursday Murder Club</p>
+                    <button class="btn btn-dark" onclick = "add(200, 'The Thursday Murder Club')"> Php 200.00 </button>
+                </div>
+            </div>
+        </div>
+		
+		<div id = "buystuffpls6" class="buyit">
+            <div class="col-sm-3 product">
+                <div class="products">
+					<img src = "https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/In_the_Woods_cover.jpg/220px-In_the_Woods_cover.jpg" alt="In The Woods">
+                    <p>In The Woods</p>
+                    <button class="btn btn-dark" onclick = "add(100 , 'In The Woods')" > Php 100.00 </button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+                    <img src = "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Westing_cover.jpg/220px-Westing_cover.jpg" alt="The Westing Game">
+                    <p>The Westing Game</p>
+                    <button class="btn btn-dark" onclick = "add(100, 'The Westing Game')"> Php 100.00 </button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+					<img src = "https://images-na.ssl-images-amazon.com/images/I/81YXxLP5cmL.jpg" alt="Dead Until Dark">
+                    <p>Dead Until Dark</p>
+                    <button class="btn btn-dark" onclick = "add(200, 'Dead Until Dark')"> Php 200.00</button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="productslast" id="lastproduct3">
+					<img src = "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781501171345/the-last-thing-he-told-me-9781501171345_xlg.jpg" alt="The Last Thing He Told Me">
+                    <p id="last">The Last Thing He Told Me</p>
+                    <button class="btn btn-dark" onclick = "add(150, 'The Last Thing He Told Me')"> Php 150.00 </button>
+                </div>
+            </div>
+        </div>
+		
+		<div id = "buystuffpls7" class="buyit">
+		<h1 id= "category4"><mark>&nbsp;&nbsp;Historical Fiction&nbsp;&nbsp;</mark></h1>
+            <div class="col-sm-3 product">
+                <div class="products" id="products4">
+					<img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1595210308l/53018165.jpg" alt="Our Darkest Night">
+                    <p>Our Darkest Night</p>
+                    <button class="btn btn-dark" onclick = "add(175 , 'Our Darkest Night')" > Php 175.00 </button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+                    <img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1605573708l/55656269.jpg" alt="Build Your House Around my Body">
+                    <p id="build">Build Your House Around My Body</p>
+                    <button class="btn btn-dark" onclick = "add(150, 'Build Your House Around My Body')"> Php 150.00 </button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+					<img src = "https://media.npr.org/assets/img/2021/03/12/91eih862-hl_custom-23eff802c76c0ede4c9ca56489bbbdaf96131adc-s800-c85.jpg" alt="The Last Apotehcary">
+                    <p>The Last Apothecary</p>
+                    <button class="btn btn-dark" onclick = "add(150, 'The Last Apothecary')"> Php 150.00 </button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+					<img src = "https://images.penguinrandomhouse.com/cover/9780593190531" alt="Those Who Are Saved">
+                    <p>Those Who Are Saved</p>
+                    <button class="btn btn-dark" onclick = "add(100, 'Those Who Are Saved')"> Php 100.00 </button>
+                </div>
+            </div>
+        </div>
+		
+		<div id = "buystuffpls8" class="buyit">
+            <div class="col-sm-3 product">
+                <div class="products">
+					<img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1598993363l/21853621._SY475_.jpg" alt="The Nighting Gale">
+                    <p>The Nighting Gale</p>
+                    <button class="btn btn-dark" onclick = "add(200 , 'The Nighting Gale')" > Php 200.00 </button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+                    <img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1594925043l/53138081.jpg" alt="The Four Winds">
+                    <p>The Four Winds</p>
+                    <button class="btn btn-dark" onclick = "add(150, 'The Four Winds')"> Php 150.00 </button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="products">
+					<img src = "https://fully-booked.ap-south-1.linodeobjects.com/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/9/7/9780375842207_1.jpg" alt="The Book Thief">
+                    <p>The Book Thief</p>
+                    <button class="btn btn-dark" onclick = "add(150, 'The Book Thief')"> Php 150.00 </button>
+                </div>
+            </div>
+            <div class="col-sm-3 product">
+                <div class="productslast" id="lastproduct4">
+					<img src = "https://images.gr-assets.com/books/1415375471l/119073.jpg" alt="The Name of the Rose">
+                    <p>The Name of the Rose</p>
+                    <button class="btn btn-dark" onclick = "add(200, 'The Name of the Rose')"> Php 200.00 </button>
+                </div>
+            </div>
+        </div>
+		
+      <div id = "cartthing">
+        <div class="col-sm-7 product">
+		<br>
+		<br>
+		<br>
+		<br>
+			<a id = "target"></a>
+            <h3>Your Cart:</h3>
+            <div id = "thecartpart"> 
+            <div id="cart"> 
+				<p>N/A</p>
+            </div>
+                <h4 id="total">Total: PHP</h4>
+            </div>
+        </div>
+        <div class="col-sm-5 product">
+		<br>
+		<br>
+		<br>
+		<br>
+            <h3>Enter your contact details here:</h3>
+            <div class="products">
+            <form action="http://savantandsparktest.ml/checkout.php" method="post">
+                 <label class = "defaultlabelsucks"> Name</label>
+                 <input class="form-control" id="name" type="text" placeholder="Jake Sadorra" name = "cust_name">
+                 <label class = "defaultlabelsucks"> Email</label>
+                 <input class="form-control" id="email" type="text" placeholder="jesadorra@clc.pshs.edu.ph" name = "cust_email">
+                 <label class = "defaultlabelsucks"> Address</label>
+                 <input class="form-control" id="address" type="text" placeholder="Hogwarts" name = "cust_addr">
+				 
+				 <input class="form-control" id="order" type="text" placeholder="Address" name="cust_order" style="display: none">
+                    <br>
+                    <input type="submit" value="Submit" class="btn btn-dark">
+                </form>
+            </div>
+        </div>
+    </div>
+	</div>
+	
+	<footer>
+		<div id="first">
+			<img id="futer" src="https://i.ibb.co/DbgM5bc/circle-cropped.png" alt="Logo">
+			Bookmarked 
+		</div>
+					
+		<div id="desc">
+			BOOKMARKED is an online bookshop made by four Philippine Science High School Students for an enjoyable browse through some recommended reads. It offers a cozy theme and affordable prices, as well las fast delivery and for a cause! For every book you buy, the profit would be donated to organizations that teach and take care of less fortunate children. For an enjoyable and purposeful shopping experience, BOOKMARKED is the place to buy!
+		</div>
+	</footer>
+	
+	<div id="dulo">
+		Copyright &#169; 2021 All rights reserved.
+	</div>
+	
+        <script>
+		let istheresomethinginhere = false;
+		let onlinestore = {
+			product: []
+		}
+		var totalprice = 0;
+		var numberofproducts = 0;
+		var producttype = 0;
+		
+		function refresh() {
+            for(let x = 0; x < onlinestore.product.length; x++){
+                if(onlinestore.product[x] === undefined){
+                    onlinestore.product.splice(x, 1)
+                    x -= 1
+                }
+            }
+            producttype = onlinestore.product.length - 1;
+            for(let x = 0; x <= producttype; x++){
+                if (onlinestore.product[x].prod_number !== x){
+                    document.getElementById(`${onlinestore.product[x].prod_number}`).id = `${x}`
+                    document.getElementById(`remove${onlinestore.product[x].prod_number}`).setAttribute("onclick", `remove(${x})`)
+                    document.getElementById(`remove${onlinestore.product[x].prod_number}`).id = `remove${x}`
+                    onlinestore.product[x].prod_number = x
+                }
+            }
+            producttype = onlinestore.product.length
+        }
+		
+		function remove(x) {
+            document.getElementById(x).remove();
+            numberofproducts -= 1;
+            totalprice -= onlinestore.product[x].prod_price;
+            document.getElementById("total").innerHTML = `Total: PHP ${totalprice} `
+
+            
+            delete onlinestore.product [x]
+            refresh()
+
+            if(numberofproducts <= 0){
+                document.getElementById("cart").innerHTML = `
+                <p> N/A </p>`
+                istheresomethinginhere = false;
+            }
+
+            document.getElementById("order").value = JSON.stringify(onlinestore.product);
+        }
+		
+		 function add(price, name){
+             if(istheresomethinginhere=== false){
+                document.getElementById("cart").innerHTML = ""
+                istheresomethinginhere = true
+            }
+            numberofproducts++;
+            totalprice += price;
+            document.getElementById("cart").innerHTML += `
+			
+			<div id="${producttype}" style="margin: 0; border-bottom: 1px solid black; padding: 10px">
+			
+               <p id = "theproduct" style = "font-weight:bold" >${name} (PHP ${price}) </p>
+			   
+			   <p id = "theremovething"> <span class = "decoratethisjake" id="remove${producttype}" onclick="remove('${producttype}')" style = "color:red; font-size:14px; font-weight: bold;">remove</span></p>
+			   
+            </div>`
+            document.getElementById("total").innerHTML = "Total: PHP " + totalprice;
+
+            onlinestore.product[`${producttype}`] = {
+                prod_name: name,
+                prod_price: price,
+                prod_number: producttype 
+            }
+			producttype++;
+            document.getElementById("order").value = JSON.stringify(onlinestore.product);
+
+            
+        }
+		
+		var mybutton = document.getElementById("myBtn");
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+			
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+		
+		$(document).ready(function(){
+			$("#myCarousel").carousel({
+				interval: 5000
+			}); 
+		$('.carousel').carousel('cycle');
+			});
+	
+		
+        </script>
+    </body>
+</html>

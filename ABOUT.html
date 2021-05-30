@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>About The Company</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Charm:wght@400;700&family=Fredericka+the+Great&family=Unica+One&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Big+Shoulders+Display&display=swap" rel="stylesheet">
+		<style>
+			html{
+				padding: 0;
+				margin: 0;
+				width: 100%;
+			}
+			
+			body{
+				min-height: 100%;
+				background-color: #C09175;
+				padding: 0;
+				margin: 0;
+				width: 100%;
+			}
+		
+			.container-fluid{
+				padding: 0;
+				margin: 0;
+				width: 100%;
+			}
+			
+			.header{
+				padding: 5%;
+				width: 100%;
+				background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm187-nunoon-51_1.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=9255dd47246e2f7d69994fbac20d098e");
+				color: white;
+				background-repeat: no-repeat;
+				background-size: cover;
+				font-family: 'Fredericka the Great', cursive;
+				margin: 0;
+				height: 100%;
+			}
+			
+			.intro{
+				width: 80%;
+				height: 70%;
+			}
+			
+			.content{
+				padding: 8% 5%;
+				margin: auto;
+				text-align: center;
+				width: 100%;
+				min-height: 100vh;
+
+			}
+
+			.developers{
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: space-evenly;
+			}
+			
+			.card-1{
+				flex: 1;
+				width: 90%;
+				margin: auto;
+				background-color: #f5E6E7;
+			}
+			
+			.card-2{
+				flex: 1;
+				width: 90%;
+				margin: auto;
+				background-color: #D1AE9B;
+			}
+			
+			.card-body{
+				text-align: center;
+			}
+			
+			.card-footer{
+				background-color: rgba(0, 0, 0, 0.3);
+				font-family: 'Big Shoulders Display', cursive;
+				color: white;
+			}
+			
+			.title{
+				text-align: center;
+				margin: auto;
+				font-family: 'Unica One', cursive;
+				font-size: 10vh;
+			}
+			
+			.info{
+				font-family: 'Baloo 2', cursive;
+			}
+				
+			
+			img{
+				width: 20%;
+				height: auto;
+				border-radius: 50%;
+			}
+			
+			.buttons{
+				width: 100%;
+				margin-top: 20px;
+				display: flex;
+				font-family: 'Unica One', cursive;
+			}
+				
+			.btn-color{
+				margin: auto;
+				background-color: #C09175;
+				margin-left: 5px;
+				margin-right: 5px;
+				border: 1px solid #8b8b8b;
+				font-family: 'Unica One', cursive;
+				color: white;
+				height: 35px;
+			}
+
+			@media only screen and (max-width: 600px) {
+				.developers{
+					flex-direction: column;
+				}
+			}
+		</style>
+	</head>
+    <body>
+        <div class="container-fluid">
+            <div class="header">
+				<div class="intro">
+					<h1>About The Company</h1><br>
+					<h6>BOOKMARKED is an online bookshop made by four Philippine Science High School Students
+					for an enjoyable browse through some recommended reads. It offers a cozy theme and affordable
+					prices, as well as fast delivery and for a cause! For every book you buy, the profit would be 
+					donated to organizations that teach and take care of leff-fortunate children. For an enjoyable
+					and purposeful shopping experience, BOOKMARKED is the place to buy!</h6>
+				</div>
+				
+				<div class="buttons">
+					<button type="button" class="btn btn-color" onclick="catalog()">SHOP NOW</button>
+					<button type="button" class="btn btn-color" onclick="index()">Index</button>
+				</div>
+			</div>
+			
+			<div class="content">
+				<div class="title">
+					<h1>MEET THE TEAM! </h1>
+				</div>
+				
+				<div class="developers">
+					<div class="card-1">
+						<div class="card-body">
+							<div class="info">
+								<img src="images/jake.jpg" class="jake" alt="Jake"><br><br>
+								<h5>JACOB SADORRA</h5> <p>is a student from 9-Samat studying in PSHS-CLC and is one of the 
+								co-creators of BOOKMARKED. Jake is in charge of the javascript and functions, allowing the website
+								to perform well and be of the best service.</p><br>
+							</div>
+						</div>
+							
+						<div class="card-footer">
+							<h5>EMAIL:  jesadorra@pshs.clc.edu.ph </h5>
+						</div>
+					</div>
+					
+					<div class="card-2">
+						<div class="card-body">
+							<div class="info">
+								<img src="images/nikki.jpg" class="nikki" alt="Nikki"><br><br>
+								<h5>ANNIKKA GUEVARRA</h5> <p>is a student from 9-Samat studying in PSHS-CLC and is one of the 
+								co-creators of BOOKMARKED. Nikki is in charge of the css and designs of the catalog, making your
+								shopping experience better and more enjoyable to browse through.</p>
+							</div>
+						</div>
+								
+						<div class="card-footer">
+							<h5>EMAIL:  aguevarra@pshs.clc.edu.ph</h5>
+						</div>
+					</div>
+					
+					<div class="card-1">
+						<div class="card-body">
+							<div class="info">
+								<img src="images/bon.jpg" class="bon" alt="Bon"><br><br>
+								<h5>BON VELASCO</h5> <p>is a student from 9-Samat studying in PSHS-CLC and is one of the 
+								co-creators of BOOKMARKED. Bon is in charge of the html of the catalog, allowing for a more 
+								organized and specific list of books for easier viewing.</p><br>
+							</div>
+						</div>
+							
+						<div class="card-footer">
+							<h5>EMAIL:  brvelasco@pshs.clc.edu.ph </h5>
+						</div>
+					</div>
+					
+					<div class="card-2">
+						<div class="card-body">
+							<div class="info">
+								<img src="images/raya.jpg" class="raya" alt="Raya"><br><br>
+								<h5>RAYA MARTIN</h5> <p>is a student from 9-Samat studying in PSHS-CLC and is one of the 
+								co-creators of BOOKMARKED. Raya is in charge of the index and about the company pages, giving customers
+								information about the shop and about its creators.</p>
+							</div>
+						</div>
+							
+						<div class="card-footer">
+							<h5>EMAIL:  remartin@pshs.clc.edu.ph</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+		<script>
+			function index(){
+				window.location.replace("index.html");
+			}
+			function catalog(){
+				window.location.replace("catalog.html");
+			}
+		</script>
+    </body>
+</html>
